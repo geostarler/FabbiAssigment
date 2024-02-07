@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="KGk-i7-Jjw" customClass="SelectedDishCell" customModule="FabbiAssigment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="507" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TNE-wK-t30">
+                        <rect key="frame" x="32" y="0.0" width="443" height="160"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4F-7o-Qvg">
+                                <rect key="frame" x="0.0" y="0.0" width="443" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a dish:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGm-7i-SFe">
+                                        <rect key="frame" x="0.0" y="8" width="154.66666666666666" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="3ze-UA-iiH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOU-Jn-CkV">
+                                        <rect key="frame" x="0.0" y="36" width="443" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="-1" id="AA1-n2-5e1"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5GU-pO-FFr"/>
+                                    <constraint firstAttribute="trailing" secondItem="VOU-Jn-CkV" secondAttribute="trailing" id="9IX-Hn-RQI"/>
+                                    <constraint firstItem="qGm-7i-SFe" firstAttribute="top" secondItem="i4F-7o-Qvg" secondAttribute="top" constant="8" id="9ew-0h-2zq"/>
+                                    <constraint firstAttribute="bottom" secondItem="VOU-Jn-CkV" secondAttribute="bottom" constant="8" id="MeA-o5-Owz"/>
+                                    <constraint firstItem="VOU-Jn-CkV" firstAttribute="leading" secondItem="i4F-7o-Qvg" secondAttribute="leading" id="PMD-sg-iyw"/>
+                                    <constraint firstItem="VOU-Jn-CkV" firstAttribute="top" secondItem="qGm-7i-SFe" secondAttribute="bottom" constant="8" id="Vg2-yc-vhc"/>
+                                    <constraint firstItem="qGm-7i-SFe" firstAttribute="leading" secondItem="i4F-7o-Qvg" secondAttribute="leading" id="yqe-xV-koK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-fJ-xqb">
+                                <rect key="frame" x="0.0" y="80" width="443" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter no of serving:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2om-Xo-iPh">
+                                        <rect key="frame" x="0.0" y="8" width="202.33333333333334" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="W37-Ky-SjO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xdT-Rq-J1o">
+                                        <rect key="frame" x="0.0" y="36" width="443" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="-1" id="fT8-mg-4nU"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xdT-Rq-J1o" secondAttribute="trailing" id="3mY-gB-Xcd"/>
+                                    <constraint firstItem="2om-Xo-iPh" firstAttribute="top" secondItem="Ih6-fJ-xqb" secondAttribute="top" constant="8" id="A0c-C3-ngU"/>
+                                    <constraint firstItem="xdT-Rq-J1o" firstAttribute="leading" secondItem="Ih6-fJ-xqb" secondAttribute="leading" id="OKw-0I-duf"/>
+                                    <constraint firstAttribute="bottom" secondItem="xdT-Rq-J1o" secondAttribute="bottom" constant="8" id="pUg-3R-TxX"/>
+                                    <constraint firstItem="2om-Xo-iPh" firstAttribute="leading" secondItem="Ih6-fJ-xqb" secondAttribute="leading" id="xOz-xJ-JXb"/>
+                                    <constraint firstAttribute="height" constant="80" id="yd3-nP-qA1"/>
+                                    <constraint firstItem="xdT-Rq-J1o" firstAttribute="top" secondItem="2om-Xo-iPh" secondAttribute="bottom" constant="8" id="zpm-e5-7OK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TNE-wK-t30" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="6iq-r8-60r"/>
+                    <constraint firstAttribute="bottom" secondItem="TNE-wK-t30" secondAttribute="bottom" id="EtE-5R-THk"/>
+                    <constraint firstItem="TNE-wK-t30" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jBZ-dm-XpK"/>
+                    <constraint firstAttribute="trailing" secondItem="TNE-wK-t30" secondAttribute="trailing" constant="32" id="wD6-vb-nPg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dishLabel" destination="qGm-7i-SFe" id="2vm-kq-0WL"/>
+                <outlet property="dishTextField" destination="VOU-Jn-CkV" id="MXG-9q-vxR"/>
+                <outlet property="noServingLabel" destination="2om-Xo-iPh" id="4ul-tP-2M3"/>
+                <outlet property="noServingTextField" destination="xdT-Rq-J1o" id="7o9-tK-uMX"/>
+            </connections>
+            <point key="canvasLocation" x="281.67938931297709" y="66.197183098591552"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

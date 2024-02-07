@@ -1,0 +1,6 @@
+framework module Pods_FabbiAssigmentTests {
+  umbrella header "Pods-FabbiAssigmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

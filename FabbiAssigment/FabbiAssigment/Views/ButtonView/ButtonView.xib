@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonView" customModule="FabbiAssigment" customModuleProvider="target">
+            <connections>
+                <outlet property="leftButton" destination="o9N-1f-y66" id="DME-3f-vFw"/>
+                <outlet property="rightButton" destination="lpW-XZ-8ad" id="WmB-Jt-C1N"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZv-eG-esy">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9N-1f-y66" customClass="AppButton" customModule="FabbiAssigment" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="80"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isColorButton" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="leftButtonClicked:" destination="-1" eventType="touchUpInside" id="fVK-oG-GdH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpW-XZ-8ad" customClass="AppButton" customModule="FabbiAssigment" customModuleProvider="target">
+                            <rect key="frame" x="204.66666666666663" y="0.0" width="188.33333333333337" height="80"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isColorButton" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="rightButtonClicked:" destination="-1" eventType="touchUpInside" id="wcb-ZN-YL6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="lpW-XZ-8ad" secondAttribute="bottom" id="99K-u3-tjC"/>
+                        <constraint firstItem="o9N-1f-y66" firstAttribute="top" secondItem="tZv-eG-esy" secondAttribute="top" id="F6g-uu-Nun"/>
+                        <constraint firstItem="o9N-1f-y66" firstAttribute="leading" secondItem="tZv-eG-esy" secondAttribute="leading" id="Jfb-ao-d9O"/>
+                        <constraint firstAttribute="bottom" secondItem="o9N-1f-y66" secondAttribute="bottom" id="RiJ-3c-2PD"/>
+                        <constraint firstItem="o9N-1f-y66" firstAttribute="width" secondItem="lpW-XZ-8ad" secondAttribute="width" id="Rvy-Yw-q1X"/>
+                        <constraint firstItem="lpW-XZ-8ad" firstAttribute="leading" secondItem="o9N-1f-y66" secondAttribute="trailing" constant="16" id="fd2-VA-7lL"/>
+                        <constraint firstAttribute="trailing" secondItem="lpW-XZ-8ad" secondAttribute="trailing" id="lj7-69-qol"/>
+                        <constraint firstItem="lpW-XZ-8ad" firstAttribute="top" secondItem="tZv-eG-esy" secondAttribute="top" id="lmq-NM-Jje"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tZv-eG-esy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PlC-fB-ekp"/>
+                <constraint firstItem="tZv-eG-esy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QBs-bo-n8c"/>
+                <constraint firstAttribute="trailing" secondItem="tZv-eG-esy" secondAttribute="trailing" id="QIO-rc-zMB"/>
+                <constraint firstAttribute="bottom" secondItem="tZv-eG-esy" secondAttribute="bottom" id="a27-gU-6KW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="220.61068702290075" y="-168.3098591549296"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="lpW-XZ-8ad">
+            <size key="intrinsicContentSize" width="75" height="38.333333333333336"/>
+        </designable>
+        <designable name="o9N-1f-y66">
+            <size key="intrinsicContentSize" width="75" height="38.333333333333336"/>
+        </designable>
+    </designables>
+</document>

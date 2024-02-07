@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurant View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="RestaurantViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RestaurantViewController" customModule="FabbiAssigment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUE-La-er4" customClass="StepBarView" customModule="FabbiAssigment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Ce-u5-iS4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBa-tu-ny3">
+                                <rect key="frame" x="32" y="154" width="350" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a restaurant:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjL-Wi-53f">
+                                        <rect key="frame" x="0.0" y="8" width="201" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Csa-Nh-m7e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vUu-sq-ABb">
+                                        <rect key="frame" x="0.0" y="36" width="350" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vUu-sq-ABb" secondAttribute="bottom" constant="8" id="9Ig-hp-6O2"/>
+                                    <constraint firstItem="vUu-sq-ABb" firstAttribute="top" secondItem="NjL-Wi-53f" secondAttribute="bottom" constant="8" id="JL9-Sf-Q5D"/>
+                                    <constraint firstAttribute="height" constant="80" id="Pom-vI-OEl"/>
+                                    <constraint firstAttribute="trailing" secondItem="vUu-sq-ABb" secondAttribute="trailing" id="VH5-fw-4Ua"/>
+                                    <constraint firstItem="NjL-Wi-53f" firstAttribute="top" secondItem="aBa-tu-ny3" secondAttribute="top" constant="8" id="VJN-ia-4IA"/>
+                                    <constraint firstItem="NjL-Wi-53f" firstAttribute="leading" secondItem="aBa-tu-ny3" secondAttribute="leading" id="fJS-rq-lyX"/>
+                                    <constraint firstItem="vUu-sq-ABb" firstAttribute="leading" secondItem="aBa-tu-ny3" secondAttribute="leading" id="uA3-FT-aAc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgO-sg-sR9" customClass="ButtonView" customModule="FabbiAssigment" customModuleProvider="target">
+                                <rect key="frame" x="32" y="242" width="350" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QEh-mv-wlT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aBa-tu-ny3" secondAttribute="trailing" constant="32" id="5Tu-pK-Lmz"/>
+                            <constraint firstItem="LUE-La-er4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="7xB-rm-x8L"/>
+                            <constraint firstItem="aBa-tu-ny3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Glo-jb-O2U"/>
+                            <constraint firstItem="mgO-sg-sR9" firstAttribute="top" secondItem="aBa-tu-ny3" secondAttribute="bottom" constant="8" id="Ijz-FX-Mr7"/>
+                            <constraint firstItem="aBa-tu-ny3" firstAttribute="top" secondItem="LUE-La-er4" secondAttribute="bottom" constant="40" id="Jtg-qv-2jL"/>
+                            <constraint firstItem="LUE-La-er4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LlN-VO-Rzk"/>
+                            <constraint firstItem="mgO-sg-sR9" firstAttribute="trailing" secondItem="aBa-tu-ny3" secondAttribute="trailing" id="OA9-X4-owy"/>
+                            <constraint firstItem="LUE-La-er4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e3Y-ki-7xC"/>
+                            <constraint firstItem="mgO-sg-sR9" firstAttribute="leading" secondItem="aBa-tu-ny3" secondAttribute="leading" id="oNG-c2-ijh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonView" destination="mgO-sg-sR9" id="7K6-hK-eQR"/>
+                        <outlet property="selectedRestaurantLabel" destination="NjL-Wi-53f" id="Aqn-Qn-p7g"/>
+                        <outlet property="selectedRestaurantTextField" destination="vUu-sq-ABb" id="P3p-0s-Hse"/>
+                        <outlet property="stepBarView" destination="LUE-La-er4" id="7tA-Fu-Mrr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

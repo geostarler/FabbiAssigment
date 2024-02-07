@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  FabbiAssigment
+
+  Created by Maoo on 04/02/2024.
+  
+*/
+
+// MARK: Label name
+"select_meal" = "Please select a meal:";
+"select_number_people" = "Please enter number of people:";
+"select_restaurant" = "Please select a restaurant:";
+"select_number_people" = "Please enter number of people:";
+"select_dish" = "Please select a dish:";
+"select_no_servings" = "Please enter no of servings:";
+"meal" = "Meal:";
+"no_people" = "Number of people:";
+"restaurant" = "Restaurant:";
+"dishes" = "Dishes:";
+
+
+// MARK: Button name
+"next_button" = "Next";
+"previous_button" = "Previous";
+"submit_button" = "Submit";
+
+// MARK: Step names
+"step_1" = "Select meal";
+"step_2" = "Select restaurant";
+"step_3" = "Select dishes";
+"step_4" = "Review";
+
+// MARK: Error:
+"meal_error" = "Please select a meal!";
+"no_people_error" = "Please enter number of people!\n(Max 10)";
+"restaurant_error" = "Please select a restaurant!";
+"dishes_error" = "Please select a Dish!";
+"no_servings_error" = "Please enter no of servings!";
+"total_dishes_error" = "You can only choose a maximum of 10 servings, please update no of servings!";
+
+// MARK: String
+"breakfast" = "breakfast";
+"lunch" = "lunch";
+"dinner" = "dinner";
